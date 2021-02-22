@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.69ae3869.chunk.css",
-    "main.js": "/website/static/js/main.97b14bf2.chunk.js",
-    "main.js.map": "/website/static/js/main.97b14bf2.chunk.js.map",
+    "main.css": "/website/static/css/main.4c86df02.chunk.css",
+    "main.js": "/website/static/js/main.9f20db42.chunk.js",
+    "main.js.map": "/website/static/js/main.9f20db42.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.61427890.js",
     "runtime-main.js.map": "/website/static/js/runtime-main.61427890.js.map",
-    "static/js/2.82e63b51.chunk.js": "/website/static/js/2.82e63b51.chunk.js",
-    "static/js/2.82e63b51.chunk.js.map": "/website/static/js/2.82e63b51.chunk.js.map",
+    "static/js/2.c69aaa86.chunk.js": "/website/static/js/2.c69aaa86.chunk.js",
+    "static/js/2.c69aaa86.chunk.js.map": "/website/static/js/2.c69aaa86.chunk.js.map",
     "static/js/3.c6025e62.chunk.js": "/website/static/js/3.c6025e62.chunk.js",
     "static/js/3.c6025e62.chunk.js.map": "/website/static/js/3.c6025e62.chunk.js.map",
     "index.html": "/website/index.html",
-    "static/css/main.69ae3869.chunk.css.map": "/website/static/css/main.69ae3869.chunk.css.map",
-    "static/js/2.82e63b51.chunk.js.LICENSE.txt": "/website/static/js/2.82e63b51.chunk.js.LICENSE.txt",
+    "static/css/main.4c86df02.chunk.css.map": "/website/static/css/main.4c86df02.chunk.css.map",
+    "static/js/2.c69aaa86.chunk.js.LICENSE.txt": "/website/static/js/2.c69aaa86.chunk.js.LICENSE.txt",
     "static/media/45.3ab694ac.png": "/website/static/media/45.3ab694ac.png",
     "static/media/46.165cbc45.png": "/website/static/media/46.165cbc45.png",
     "static/media/47.ee8f6bcf.png": "/website/static/media/47.ee8f6bcf.png",
     "static/media/Screenshot_200523_000.fe1d0e02.jpg": "/website/static/media/Screenshot_200523_000.fe1d0e02.jpg",
-    "static/media/Wow.8d1f4168.jpg": "/website/static/media/Wow.8d1f4168.jpg",
-    "static/media/logo.6ce24c58.svg": "/website/static/media/logo.6ce24c58.svg"
+    "static/media/Warframe0040.a0376d56.jpg": "/website/static/media/Warframe0040.a0376d56.jpg",
+    "static/media/Wow.8d1f4168.jpg": "/website/static/media/Wow.8d1f4168.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.61427890.js",
-    "static/js/2.82e63b51.chunk.js",
-    "static/css/main.69ae3869.chunk.css",
-    "static/js/main.97b14bf2.chunk.js"
+    "static/js/2.c69aaa86.chunk.js",
+    "static/css/main.4c86df02.chunk.css",
+    "static/js/main.9f20db42.chunk.js"
   ]
 }
