@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/website/static/css/main.4c86df02.chunk.css",
-    "main.js": "/website/static/js/main.9f20db42.chunk.js",
-    "main.js.map": "/website/static/js/main.9f20db42.chunk.js.map",
+    "main.js": "/website/static/js/main.a58bf11d.chunk.js",
+    "main.js.map": "/website/static/js/main.a58bf11d.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.61427890.js",
     "runtime-main.js.map": "/website/static/js/runtime-main.61427890.js.map",
     "static/js/2.c69aaa86.chunk.js": "/website/static/js/2.c69aaa86.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/45.3ab694ac.png": "/website/static/media/45.3ab694ac.png",
     "static/media/46.165cbc45.png": "/website/static/media/46.165cbc45.png",
     "static/media/47.ee8f6bcf.png": "/website/static/media/47.ee8f6bcf.png",
+    "static/media/HW.dde8ce02.pdf": "/website/static/media/HW.dde8ce02.pdf",
     "static/media/Screenshot_200523_000.fe1d0e02.jpg": "/website/static/media/Screenshot_200523_000.fe1d0e02.jpg",
     "static/media/Warframe0040.a0376d56.jpg": "/website/static/media/Warframe0040.a0376d56.jpg",
     "static/media/Wow.8d1f4168.jpg": "/website/static/media/Wow.8d1f4168.jpg"
@@ -23,6 +24,6 @@
     "static/js/runtime-main.61427890.js",
     "static/js/2.c69aaa86.chunk.js",
     "static/css/main.4c86df02.chunk.css",
-    "static/js/main.9f20db42.chunk.js"
+    "static/js/main.a58bf11d.chunk.js"
   ]
 }
