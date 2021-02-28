@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.7acd1d95.chunk.css",
-    "main.js": "/website/static/js/main.d4951dec.chunk.js",
-    "main.js.map": "/website/static/js/main.d4951dec.chunk.js.map",
+    "main.css": "/website/static/css/main.87c8b6f8.chunk.css",
+    "main.js": "/website/static/js/main.20bfcdb9.chunk.js",
+    "main.js.map": "/website/static/js/main.20bfcdb9.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.ba005f01.js",
     "runtime-main.js.map": "/website/static/js/runtime-main.ba005f01.js.map",
-    "static/js/2.64a020da.chunk.js": "/website/static/js/2.64a020da.chunk.js",
-    "static/js/2.64a020da.chunk.js.map": "/website/static/js/2.64a020da.chunk.js.map",
+    "static/js/2.1c64e820.chunk.js": "/website/static/js/2.1c64e820.chunk.js",
+    "static/js/2.1c64e820.chunk.js.map": "/website/static/js/2.1c64e820.chunk.js.map",
     "static/js/3.f9b06b46.chunk.js": "/website/static/js/3.f9b06b46.chunk.js",
     "static/js/3.f9b06b46.chunk.js.map": "/website/static/js/3.f9b06b46.chunk.js.map",
     "index.html": "/website/index.html",
-    "static/css/main.7acd1d95.chunk.css.map": "/website/static/css/main.7acd1d95.chunk.css.map",
-    "static/js/2.64a020da.chunk.js.LICENSE.txt": "/website/static/js/2.64a020da.chunk.js.LICENSE.txt",
+    "static/css/main.87c8b6f8.chunk.css.map": "/website/static/css/main.87c8b6f8.chunk.css.map",
+    "static/js/2.1c64e820.chunk.js.LICENSE.txt": "/website/static/js/2.1c64e820.chunk.js.LICENSE.txt",
     "static/media/45.3ab694ac.png": "/website/static/media/45.3ab694ac.png",
     "static/media/46.165cbc45.png": "/website/static/media/46.165cbc45.png",
     "static/media/47.ee8f6bcf.png": "/website/static/media/47.ee8f6bcf.png",
     "static/media/HW.dde8ce02.pdf": "/website/static/media/HW.dde8ce02.pdf",
     "static/media/Screenshot_200523_000.fe1d0e02.jpg": "/website/static/media/Screenshot_200523_000.fe1d0e02.jpg",
     "static/media/Warframe0040.a0376d56.jpg": "/website/static/media/Warframe0040.a0376d56.jpg",
-    "static/media/Wow.8d1f4168.jpg": "/website/static/media/Wow.8d1f4168.jpg"
+    "static/media/Wow.8d1f4168.jpg": "/website/static/media/Wow.8d1f4168.jpg",
+    "static/media/Home.module.scss": "/website/static/media/back.a6ee4b89.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ba005f01.js",
-    "static/js/2.64a020da.chunk.js",
-    "static/css/main.7acd1d95.chunk.css",
-    "static/js/main.d4951dec.chunk.js"
+    "static/js/2.1c64e820.chunk.js",
+    "static/css/main.87c8b6f8.chunk.css",
+    "static/js/main.20bfcdb9.chunk.js"
   ]
 }
