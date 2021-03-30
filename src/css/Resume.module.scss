@@ -1,0 +1,18 @@
+.resume {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  color: white;
+  @media (max-width: 768px) {
+    position: static;
+    margin-bottom: 50px;
+    padding-top: 70px;
+  }
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}

@@ -1,0 +1,20 @@
+.projects {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  color: white;
+  @media (max-width: 768px) {
+    position: static;
+    padding-top: 70px;
+  }
+}
+.container {
+  overflow: visible;
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+}
