@@ -5,6 +5,8 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { FaToolbox } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 const About = () => {
   const [languages, setLanguages] = useState(["Java", "C", "C++"]);
   const [FEskills, setFEskills] = useState([
@@ -14,8 +16,8 @@ const About = () => {
     "JavaScript",
     "React.js",
   ]);
-  const [BEskills, setBEskills] = useState(["Node.js", "MySQL"]);
-  const [tools, setTools] = useState(["Git", "Linux CLI"]);
+  const [BEskills, setBEskills] = useState(["Node.js", "MySQL", "PostgreSQL"]);
+  const [tools, setTools] = useState(["Git", "Unix"]);
   const [skills, setSkills] = useState([
     {
       icon: <FaCode className={styles.img} />,
@@ -75,8 +77,25 @@ const About = () => {
       </div>
       <div className={styles.contact}>
         <h2>Contact Me</h2>
-        <div className={styles.email}>
-          <FaEnvelope /> nathany094@gmail.com
+        <div className={styles.links}>
+          <div className={styles.icon}>
+            <a href="https://www.linkedin.com/in/nathanyik/">
+              <FaLinkedin />
+            </a>
+            <div className={styles.email}>LinkedIn</div>
+          </div>
+          <div className={styles.icon}>
+            <a href="https://github.com/Pawnnub">
+              <FaGithub />
+            </a>
+            <div className={styles.email}>GitHub</div>
+          </div>
+          <div className={styles.icon}>
+            <a href="mailto:nathany094@gmail.com">
+              <FaEnvelope />
+            </a>
+            <div className={styles.email}>Email</div>
+          </div>
         </div>
       </div>
     </div>

@@ -10,6 +10,8 @@
   background-color: #454545;
   transition: all, 0.3s ease-in-out;
   box-shadow: 0px 0px 3px black;
+  // background-image: url("./Media/Test.png");
+  background-size: cover;
 }
 
 %icon-style {
@@ -58,7 +60,7 @@
 .sidebar-open {
   @extend %sidebar-style;
   left: 0px;
-  opacity: 100%;
+  opacity: 1;
 }
 .content {
   @extend %content-style;

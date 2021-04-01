@@ -6,10 +6,17 @@ const Resume = () => {
     <div className={styles.resume} id="resume">
       <h1>Like what you see?</h1>
       <h2>Download my resume:</h2>
-      <a href={pdf} target="_blank" className={styles.line}>
-        <FaFilePdf />
-        Jk it's not my resume yet cause I don't have any qualifications :(
-      </a>
+      <div className={styles.container}>
+        <div className={styles.fancybox}>
+          <div className={styles.box}>
+            <a href={pdf} target="_blank" className={styles.line}>
+              <FaFilePdf />
+              Resume
+            </a>
+          </div>
+          {/* <div className={styles.fancybox}></div> */}
+        </div>
+      </div>
     </div>
   );
 };

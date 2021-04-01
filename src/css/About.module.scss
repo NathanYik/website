@@ -10,8 +10,13 @@
     padding-top: 70px;
   }
 }
+.contact {
+  @media (min-width: 769px) {
+    margin-bottom: 75px;
+  }
+}
 h2 {
-  margin: 10px;
+  margin: 15px 0px;
 }
 .tags {
   display: flex;
@@ -77,10 +82,19 @@ h2 {
     grid-template-columns: 1fr 1fr;
   }
 }
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
 .email {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-wrap: break-word;
+  font-size: 0.5em;
+  color: goldenrod;
   gap: 7px;
 }
 .icon {

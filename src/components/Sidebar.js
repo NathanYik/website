@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import styles from "../css/Sidebar.module.scss";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 const Sidebar = ({ setpage, className, setvisible, setDirection }) => {
   const [type, settype] = useState(window.innerWidth > 768 ? true : false);
   const [destinations, setDestinations] = useState([
@@ -51,6 +54,20 @@ const Sidebar = ({ setpage, className, setvisible, setDirection }) => {
           {button.desc}
         </a>
       ))}
+      <div className={styles.footer}>
+        Contact Me
+        <div className={styles.contact}>
+          <a href="https://www.linkedin.com/in/nathanyik/">
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/Pawnnub">
+            <FaGithub />
+          </a>
+          <a href="mailto:nathany094@gmail.com">
+            <FaEnvelope />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

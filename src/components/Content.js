@@ -83,7 +83,6 @@ const Content = ({
         >
           <Dots page={page} />
         </CSSTransition>
-        {/* {visible && window.innerWidth > 768 && <Dots page={page} />} */}
       </div>
       {pageType.map((pg, index) => (
         <CSSTransition

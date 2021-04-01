@@ -2,8 +2,8 @@ import Project from "./Project.js";
 import { useState } from "react";
 import styles from "../css/Projects.module.scss";
 import proj1img from "../Media/EmployeePortal.png";
-import proj2img from "../Media/Portfolio.png";
-import proj3img from "../Media/45.png";
+import proj2img from "../Media/port.png";
+import proj3img from "../Media/jobs.png";
 
 const Projects = ({}) => {
   const [projects, setProjects] = useState([
@@ -21,7 +21,7 @@ const Projects = ({}) => {
             scheduling, and hours logging.
           </li>
           <li>
-            Technologies Used: HTML, Sass, Javascript, Node.js, Vue.js, Express,
+            Technologies Used: HTML, Sass, JavaScript, Node.js, Vue.js, Express,
             MySQL
           </li>
         </ul>
@@ -38,27 +38,33 @@ const Projects = ({}) => {
             projects/professional profile.
           </li>
           <li>You're on this site now!</li>
-          <li>Technologies Used: HTML, Sass, Javascript, React.js</li>
+          <li>Technologies Used: HTML, Sass, JavaScript, React.js</li>
         </ul>
       ),
       website: "https://pawnnub.github.io/website/",
       code: "https://github.com/Pawnnub/website.git",
     },
     {
-      title: "Pathfinder Visualizer",
+      title: "Job Application Tracker",
       img: proj3img,
       msg: (
         <ul>
           <li>
-            A future project that might be created sometime in the future who
-            knows?
+            My first dive into solo fullstack web development: a web app for
+            tracking all jobs I've applied to.
           </li>
-          <li>One day I'll get a job hopefully</li>
-          <li>Technologies Used: C++</li>
+          <li>
+            Supports simple CRUD operations (Create/Read/Update/Delete) on a
+            list of companies
+          </li>
+          <li>
+            Technologies Used: HTML, Sass, JavaScript, Node.js, React.js,
+            Express, PostgreSQL
+          </li>
         </ul>
       ),
-      website: "https://pawnnub.github.io/website/",
-      code: "https://github.com/Pawnnub/website.git",
+      website: "https://job-application-hunting.herokuapp.com",
+      code: "https://github.com/Pawnnub/Applied-Companies-List",
     },
   ]);
   return (
