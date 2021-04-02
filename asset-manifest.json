@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.2db4bf68.chunk.css",
-    "main.js": "/static/js/main.de8f6496.chunk.js",
-    "main.js.map": "/static/js/main.de8f6496.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.81714869.js",
-    "runtime-main.js.map": "/static/js/runtime-main.81714869.js.map",
-    "static/js/2.e93f58a4.chunk.js": "/static/js/2.e93f58a4.chunk.js",
-    "static/js/2.e93f58a4.chunk.js.map": "/static/js/2.e93f58a4.chunk.js.map",
-    "static/js/3.d4b66d26.chunk.js": "/static/js/3.d4b66d26.chunk.js",
-    "static/js/3.d4b66d26.chunk.js.map": "/static/js/3.d4b66d26.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.2db4bf68.chunk.css.map": "/static/css/main.2db4bf68.chunk.css.map",
-    "static/js/2.e93f58a4.chunk.js.LICENSE.txt": "/static/js/2.e93f58a4.chunk.js.LICENSE.txt",
-    "static/media/EmployeePortal.adcc367d.png": "/static/media/EmployeePortal.adcc367d.png",
-    "static/media/Resumev2.50311006.pdf": "/static/media/Resumev2.50311006.pdf",
-    "static/media/circle-cropped.a9236476.png": "/static/media/circle-cropped.a9236476.png",
-    "static/media/jobs.03a266d0.png": "/static/media/jobs.03a266d0.png",
-    "static/media/Home.module.scss": "/static/media/newback.79524a92.png",
-    "static/media/port.259ad2cb.png": "/static/media/port.259ad2cb.png"
+    "main.css": "/website/static/css/main.a7c4684c.chunk.css",
+    "main.js": "/website/static/js/main.de8f6496.chunk.js",
+    "main.js.map": "/website/static/js/main.de8f6496.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.033c8f10.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.033c8f10.js.map",
+    "static/js/2.e93f58a4.chunk.js": "/website/static/js/2.e93f58a4.chunk.js",
+    "static/js/2.e93f58a4.chunk.js.map": "/website/static/js/2.e93f58a4.chunk.js.map",
+    "static/js/3.d4b66d26.chunk.js": "/website/static/js/3.d4b66d26.chunk.js",
+    "static/js/3.d4b66d26.chunk.js.map": "/website/static/js/3.d4b66d26.chunk.js.map",
+    "index.html": "/website/index.html",
+    "static/css/main.a7c4684c.chunk.css.map": "/website/static/css/main.a7c4684c.chunk.css.map",
+    "static/js/2.e93f58a4.chunk.js.LICENSE.txt": "/website/static/js/2.e93f58a4.chunk.js.LICENSE.txt",
+    "static/media/EmployeePortal.adcc367d.png": "/website/static/media/EmployeePortal.adcc367d.png",
+    "static/media/Resumev2.50311006.pdf": "/website/static/media/Resumev2.50311006.pdf",
+    "static/media/circle-cropped.a9236476.png": "/website/static/media/circle-cropped.a9236476.png",
+    "static/media/jobs.03a266d0.png": "/website/static/media/jobs.03a266d0.png",
+    "static/media/Home.module.scss": "/website/static/media/newback.79524a92.png",
+    "static/media/port.259ad2cb.png": "/website/static/media/port.259ad2cb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.81714869.js",
+    "static/js/runtime-main.033c8f10.js",
     "static/js/2.e93f58a4.chunk.js",
-    "static/css/main.2db4bf68.chunk.css",
+    "static/css/main.a7c4684c.chunk.css",
     "static/js/main.de8f6496.chunk.js"
   ]
 }
