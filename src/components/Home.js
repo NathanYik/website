@@ -12,7 +12,9 @@ const Home = () => {
       </div>
       <div className={styles.container1}>
         <h1 className={styles.title}>Nathan Yik</h1>
-        <p className={styles.description}>Software Engineer | Student</p>
+        <p className={styles.description}>
+          Software Developer | Software Engineer
+        </p>
         <div className={styles.links}>
           <a href="https://www.linkedin.com/in/nathanyik/" target="_blank">
             <div className={styles.line}>

@@ -82,6 +82,10 @@ h2 {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.desc {
+  font-size: 1em;
+}
 .links {
   display: flex;
   justify-content: center;
@@ -93,9 +97,11 @@ h2 {
   align-items: center;
   justify-content: center;
   overflow-wrap: break-word;
-  font-size: 0.5em;
-  color: goldenrod;
+  font-size: 0.4em;
   gap: 7px;
+  // &:hover {
+  //   color: white;
+  // }
 }
 .icon {
   display: flex;

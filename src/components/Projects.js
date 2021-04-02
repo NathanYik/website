@@ -34,8 +34,8 @@ const Projects = ({}) => {
       msg: (
         <ul>
           <li>
-            A personal portfolio made from scratch in React for showcasing my
-            projects/professional profile.
+            A personal portfolio designed/created from scratch in React for
+            showcasing my projects/professional profile.
           </li>
           <li>You're on this site now!</li>
           <li>Technologies Used: HTML, Sass, JavaScript, React.js</li>

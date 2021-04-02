@@ -35,7 +35,7 @@
   background-size: 325% 325%;
   box-shadow: 0px 0px 7px 1px #dadada;
   border-radius: 3px;
-  padding: 2px 2px;
+  padding: 3px 3px;
   overflow: visible;
   animation: sheen 4s infinite;
 }
@@ -48,6 +48,7 @@
     background-position: 0% 0%;
   }
   100% {
+    // background-position: 100% 100%;
     background-position: 0% 0%;
   }
 }

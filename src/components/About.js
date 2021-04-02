@@ -16,7 +16,12 @@ const About = () => {
     "JavaScript",
     "React.js",
   ]);
-  const [BEskills, setBEskills] = useState(["Node.js", "MySQL", "PostgreSQL"]);
+  const [BEskills, setBEskills] = useState([
+    "Node.js",
+    "MySQL",
+    "PostgreSQL",
+    "Express",
+  ]);
   const [tools, setTools] = useState(["Git", "Unix"]);
   const [skills, setSkills] = useState([
     {
@@ -43,18 +48,27 @@ const About = () => {
         <div className={styles.description}>
           <p>
             I am a software engineer based in San Diego, California, with a B.S.
-            in Mathematics and Computer Science from the University of
-            California, San Diego.
+            in Mathematics - Computer Science from the University of California,
+            San Diego.
           </p>
           <p>
-            Here is some more placeholder text until I can figure out what to
-            say because holy crap I am realizing that I have no skills and no
-            professional background.
+            From my degree, I have a strong foundation in object-oriented
+            programming languages such as Java and C++, and am now currently
+            broadening my knowledge in full-stack web development.
           </p>
           <p>
-            I am now typing another random paragraph just to get a feel of what
-            my portfolio would look like if it actually had some kind of
-            substance.
+            I am open to communicate! For professional inquiries, feel free to
+            contact me at{" "}
+            <a
+              className={styles.desc}
+              href="mailto:nathany094@gmail.com"
+              target="_blank"
+            >
+              {" "}
+              nathany094@gmail.com
+            </a>
+            . I am always looking for opportunities to improve my skillset in
+            software engineering.
           </p>
         </div>
         <div className={styles.skills}>
@@ -79,22 +93,34 @@ const About = () => {
         <h2>Contact Me</h2>
         <div className={styles.links}>
           <div className={styles.icon}>
-            <a href="https://www.linkedin.com/in/nathanyik/">
+            <a
+              className={styles.link}
+              href="https://www.linkedin.com/in/nathanyik/"
+              target="_blank"
+            >
               <FaLinkedin />
+              <div className={styles.email}>LinkedIn</div>
             </a>
-            <div className={styles.email}>LinkedIn</div>
           </div>
           <div className={styles.icon}>
-            <a href="https://github.com/Pawnnub">
+            <a
+              className={styles.link}
+              href="https://github.com/Pawnnub"
+              target="_blank"
+            >
               <FaGithub />
+              <div className={styles.email}>GitHub</div>
             </a>
-            <div className={styles.email}>GitHub</div>
           </div>
           <div className={styles.icon}>
-            <a href="mailto:nathany094@gmail.com">
+            <a
+              className={styles.link}
+              href="mailto:nathany094@gmail.com"
+              target="_blank"
+            >
               <FaEnvelope />
+              <div className={styles.email}>Email</div>
             </a>
-            <div className={styles.email}>Email</div>
           </div>
         </div>
       </div>

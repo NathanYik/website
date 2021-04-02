@@ -85,7 +85,31 @@ a {
 }
 
 .description {
+  margin: 10px auto;
   margin-top: 0px;
+  white-space: nowrap;
+  padding: 0px 5px;
+  padding-left: calc(5px + 0.15em);
+  border-right: 0.15em solid transparent;
+  // width: 0%;
+  animation: typing 2.5s steps(35, end), blink-caret 1s step-end 4;
   position: relative;
   font-size: 1.4em;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: goldenrod;
+  }
+  50% {
+    border-color: transparent;
+  }
 }

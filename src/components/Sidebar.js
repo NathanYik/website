@@ -54,16 +54,17 @@ const Sidebar = ({ setpage, className, setvisible, setDirection }) => {
           {button.desc}
         </a>
       ))}
+      {/* <p className={styles.copyright}>Copyright © Nathan Yik 2021</p> */}
       <div className={styles.footer}>
         Contact Me
         <div className={styles.contact}>
-          <a href="https://www.linkedin.com/in/nathanyik/">
+          <a href="https://www.linkedin.com/in/nathanyik/" target="_blank">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/Pawnnub">
+          <a href="https://github.com/Pawnnub" target="_blank">
             <FaGithub />
           </a>
-          <a href="mailto:nathany094@gmail.com">
+          <a href="mailto:nathany094@gmail.com" target="_blank">
             <FaEnvelope />
           </a>
         </div>
