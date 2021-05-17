@@ -4,7 +4,7 @@
   color: white;
   width: 100%;
   height: calc(100% - 70px);
-  background-image: url("../Media/newback.png");
+  background-image: url("../Media/background.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ a {
   font-weight: 500;
   font-size: 1.5em;
   transition: 0.3s;
-  color: goldenrod;
+  color: #ffd5a4;
   cursor: pointer;
   &:hover {
     color: white;
@@ -107,7 +107,7 @@ a {
 @keyframes blink-caret {
   from,
   to {
-    border-color: goldenrod;
+    border-color: #ffd5a4;
   }
   50% {
     border-color: transparent;
