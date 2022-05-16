@@ -4,7 +4,7 @@
   color: white;
   width: 100%;
   height: calc(100% - 70px);
-  background-image: url("../Media/background.png");
+  background-image: url("../Media/newback.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ a {
   font-weight: 500;
   font-size: 1.5em;
   transition: 0.3s;
-  color: #ffd5a4;
+  color: goldenrod;
   cursor: pointer;
   &:hover {
     color: white;
@@ -92,9 +92,9 @@ a {
   padding-left: calc(5px + 0.15em);
   border-right: 0.15em solid transparent;
   // width: 0%;
-  animation: typing 2.5s steps(35, end), blink-caret 1s step-end 4;
+  // animation: typing 2.5s steps(35, end), blink-caret 1s step-end 4;
   position: relative;
-  font-size: 1.4em;
+  font-size: min(1.4em, 4.5vw);
 }
 @keyframes typing {
   from {
@@ -107,7 +107,7 @@ a {
 @keyframes blink-caret {
   from,
   to {
-    border-color: #ffd5a4;
+    border-color: goldenrod;
   }
   50% {
     border-color: transparent;

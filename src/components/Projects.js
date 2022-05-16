@@ -4,6 +4,7 @@ import styles from "../css/Projects.module.scss";
 import proj1img from "../Media/EmployeePortal.png";
 import proj2img from "../Media/port.png";
 import proj3img from "../Media/jobs.png";
+import proj4img from "../Media/taskathon.png";
 
 const Projects = ({}) => {
   const [projects, setProjects] = useState([
@@ -27,6 +28,27 @@ const Projects = ({}) => {
         </ul>
       ),
       website: "https://employee.royalemeraldrx.com/",
+    },
+    {
+      title: "Taskathon Go!",
+      img: proj4img,
+      msg: (
+        <ul>
+          <li>
+            An online, gamified task-tracking application to promote outdoor
+            activities and engaging with your local community.
+          </li>
+          <li>
+            Compete with friends for points, find outdoor tasks on the minimap,
+            and track your progress with charts!
+          </li>
+          <li>
+            Technologies Used: HTML, Sass, JavaScript, React.js, C#, .NET,
+            Material-UI
+          </li>
+        </ul>
+      ),
+      website: "https://taskathon.netlify.app/",
     },
     {
       title: "Personal Portfolio Website",

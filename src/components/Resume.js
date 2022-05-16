@@ -1,5 +1,5 @@
 import styles from "../css/Resume.module.scss";
-import pdf from "../Media/Resumev2.pdf";
+import pdf from "../Media/Resumev3.pdf";
 import { FaFilePdf } from "react-icons/fa";
 const Resume = () => {
   return (
