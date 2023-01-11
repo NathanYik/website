@@ -1,53 +1,57 @@
-import { useState, useEffect } from "react";
-import styles from "../css/Sidebar.module.scss";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
-const Sidebar = ({ setpage, className, setvisible, setDirection }) => {
-  const [type, settype] = useState(window.innerWidth > 768 ? true : false);
-  const [destinations, setDestinations] = useState([
+import { useState, useEffect } from 'react'
+import styles from '../css/Sidebar.module.scss'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
+import { FaEnvelope } from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
+
+const Sidebar = ({ setpage, className, setVisible, setDirection, visible }) => {
+  const menuButtonClassname = visible ? styles.icon : styles['icon-open']
+  const [type, setType] = useState(window.innerWidth > 768 ? true : false)
+  const destinations = [
     {
       destination: { home: true, projects: false, about: false, resume: false },
-      desc: "Home",
+      desc: 'Home',
     },
     {
       destination: { home: false, projects: true, about: false, resume: false },
-      desc: "Projects",
+      desc: 'Projects',
     },
     {
       destination: { home: false, projects: false, about: true, resume: false },
-      desc: "About",
+      desc: 'About',
     },
     {
       destination: { home: false, projects: false, about: false, resume: true },
-      desc: "Resume",
+      desc: 'Resume',
     },
-  ]);
+  ]
   const handleWindowChange = () => {
     if (window.innerWidth <= 768 && type === true) {
-      settype(false);
-      setvisible(true);
+      setType(false)
+      setVisible(true)
     } else if (window.innerWidth > 768 && type === false) {
-      settype(true);
-      setvisible(false);
+      setType(true)
+      setVisible(false)
     }
-  };
+  }
   useEffect(() => {
-    window.addEventListener("resize", handleWindowChange);
+    window.addEventListener('resize', handleWindowChange)
     return () => {
-      window.removeEventListener("resize", handleWindowChange);
-    };
-  }, [type]);
+      window.removeEventListener('resize', handleWindowChange)
+    }
+  }, [type])
+
   return (
-    <div className={className}>
+    <nav className={className}>
       <div className={styles.padding}></div>
       {destinations.map((button, index) => (
         <a
           href="#portfolio"
           className={styles.btn}
           onClick={() => {
-            setpage(button.destination);
-            setDirection("fade");
+            setpage(button.destination)
+            setDirection('fade')
           }}
           key={index}
         >
@@ -69,8 +73,8 @@ const Sidebar = ({ setpage, className, setvisible, setDirection }) => {
           </a>
         </div>
       </div>
-    </div>
-  );
-};
+    </nav>
+  )
+}
 
-export default Sidebar;
+export default Sidebar

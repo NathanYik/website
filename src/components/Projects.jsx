@@ -1,13 +1,12 @@
 import Project from './Project'
-import { useState } from 'react'
 import styles from '../css/Projects.module.scss'
 import proj1img from '../Media/EmployeePortal.png'
 import proj2img from '../Media/port.png'
 import proj3img from '../Media/jobs.png'
 import proj4img from '../Media/taskathon.png'
 
-const Projects = ({}) => {
-  const [projects, setProjects] = useState([
+const Projects = () => {
+  const projects = [
     {
       title: 'Royal Emerald Employee Portal',
       img: proj1img,
@@ -63,11 +62,11 @@ const Projects = ({}) => {
           <li>Technologies Used: HTML, Sass, JavaScript, React.js</li>
         </ul>
       ),
-      website: 'https://pawnnub.github.io/website/',
-      code: 'https://github.com/Pawnnub/website.git',
+      website: 'https://nathanyik.github.io/website/',
+      code: 'https://github.com/nathanyik/website.git',
     },
     {
-      title: 'Job Application Tracker',
+      title: 'Guess The Height',
       img: proj3img,
       msg: (
         <ul>
@@ -86,11 +85,12 @@ const Projects = ({}) => {
         </ul>
       ),
       website: 'https://job-application-hunting.herokuapp.com',
-      code: 'https://github.com/Pawnnub/Applied-Companies-List',
+      code: 'https://github.com/nathanyik/guessing-game',
     },
-  ])
+  ]
+
   return (
-    <div className={styles.projects} id="projects">
+    <section className={styles.projects} id="projects">
       <h1>Projects</h1>
       <div className={styles.container}>
         {projects.map((project, index) => (
@@ -104,7 +104,7 @@ const Projects = ({}) => {
           />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

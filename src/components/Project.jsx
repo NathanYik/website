@@ -4,7 +4,7 @@ import Popup from './Popup'
 import { CSSTransition } from 'react-transition-group'
 import '../css/transitions.scss'
 const Project = ({ title, website, code, img, msg }) => {
-  const [visible, setvisible] = useState(false)
+  const [visible, setVisible] = useState(false)
   const github = code ? (
     <a className={styles.link} href={code} target="_blank">
       Github
@@ -20,7 +20,7 @@ const Project = ({ title, website, code, img, msg }) => {
         classNames="fade1"
         unmountOnExit
       >
-        <Popup img={img} setvisible={setvisible} />
+        <Popup img={img} setvisible={setVisible} />
       </CSSTransition>
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.links}>
@@ -34,7 +34,7 @@ const Project = ({ title, website, code, img, msg }) => {
           src={img}
           className={styles.img}
           onClick={() => {
-            setvisible(!visible)
+            setVisible(!visible)
           }}
         />
         <div className={styles.description}>{msg}</div>

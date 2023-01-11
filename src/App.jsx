@@ -21,19 +21,23 @@ function App() {
           resume: true,
         }
   )
-  let selfclosing = window.innerWidth <= 768 ? true : false
-  const [visible, setvisible] = useState(selfclosing)
-  let sidebarClassname = visible ? styles.sidebar : styles['sidebar-open']
-  let contentClassname = visible ? styles.content : styles['content-open']
-  let iconClassname = visible ? styles.icon : styles['icon-open']
+  const selfclosing = window.innerWidth <= 768 ? true : false
+  const [visible, setVisible] = useState(selfclosing)
+  const sidebarClassname = visible ? styles.sidebar : styles['sidebar-open']
+  const contentClassname = visible ? styles.content : styles['content-open']
+  let menuButtonClassname = visible ? styles.icon : styles['icon-open']
+
   return (
     <>
-      <FaBars className={iconClassname} onClick={() => setvisible(!visible)} />
+      <FaBars
+        className={menuButtonClassname}
+        onClick={() => setVisible(!visible)}
+      />
       <Sidebar
         className={sidebarClassname}
         setpage={setpage}
         selfclosing={selfclosing}
-        setvisible={setvisible}
+        setVisible={setVisible}
         setDirection={setDirection}
       />
       <Content

@@ -4,9 +4,10 @@ import '../css/transitions.scss'
 import pic from '../Media/circle-cropped.png'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
+
 const Home = () => {
   return (
-    <div className={styles.home} id="home">
+    <section className={styles.home} id="home">
       <div className={styles.container2}>
         <img src={pic} className={styles.img} />
       </div>
@@ -28,7 +29,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

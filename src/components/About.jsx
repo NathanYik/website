@@ -1,5 +1,4 @@
 import styles from '../css/About.module.scss'
-import { useState } from 'react'
 import { FaEnvelope } from 'react-icons/fa'
 import { FaHtml5 } from 'react-icons/fa'
 import { FaCode } from 'react-icons/fa'
@@ -8,22 +7,26 @@ import { FaDatabase } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 const About = () => {
-  const [languages, setLanguages] = useState(['Java', 'C', 'C++'])
-  const [FEskills, setFEskills] = useState([
+  const languages = [
+    'JavaScript',
+    'TypeScript',
     'HTML',
     'CSS',
-    'Sass',
-    'JavaScript',
-    'React.js',
-  ])
-  const [BEskills, setBEskills] = useState([
+    'Java',
+    'Python',
+    'C',
+    'C++',
+  ]
+  const frontendSkills = ['React', 'Vue', 'Svelte', 'Solid']
+  const backendSkills = [
+    'Ruby on Rails',
     'Node.js',
+    'Express',
     'MySQL',
     'PostgreSQL',
-    'Express',
-  ])
-  const [tools, setTools] = useState(['Git', 'Unix'])
-  const [skills, setSkills] = useState([
+  ]
+  const tools = ['Git', 'Unix']
+  const skills = [
     {
       icon: <FaCode className={styles.img} />,
       desc: 'Languages',
@@ -32,33 +35,36 @@ const About = () => {
     {
       icon: <FaHtml5 className={styles.img} />,
       desc: 'Front End',
-      type: FEskills,
+      type: frontendSkills,
     },
     {
       icon: <FaDatabase className={styles.img} />,
       desc: 'Back End',
-      type: BEskills,
+      type: backendSkills,
     },
     { icon: <FaToolbox className={styles.img} />, desc: 'Tools', type: tools },
-  ])
+  ]
+
   return (
-    <div className={styles.about} id="about">
+    <section className={styles.about} id="about">
       <h1>About Me</h1>
       <div className={styles.container}>
-        <div className={styles.description}>
+        <article className={styles.description}>
           <p>
-            I am a software engineer based in San Diego, California, with a B.S.
-            in Mathematics - Computer Science from the University of California,
-            San Diego.
+            Hello! My name is Nathan, I am a software engineer based in
+            California, with a B.S. in Mathematics - Computer Science from the
+            University of California, San Diego.
           </p>
           <p>
-            From my degree, I have a strong foundation in object-oriented
-            programming languages such as Java and C++, and am now currently
-            broadening my knowledge in full-stack web development.
+            I primarily focus on fullstack web development, with my main working
+            experience being in React and Ruby on Rails so far. However, I love
+            exploring other technologies as well! Recently Solid and Qwik have
+            caught my eye, and I'm closely following their development. I also
+            love Vim and am a Neovim enthusiast.
           </p>
           <p>
             I am open to communicate! For professional inquiries, feel free to
-            contact me at{' '}
+            contact me at
             <a
               className={styles.desc}
               href="mailto:nathany094@gmail.com"
@@ -70,7 +76,7 @@ const About = () => {
             . I am always looking for opportunities to improve my skillset in
             software engineering.
           </p>
-        </div>
+        </article>
         <div className={styles.skills}>
           {skills.map((category, index) => (
             <div key={index} className={styles.languages}>
@@ -124,7 +130,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

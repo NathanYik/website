@@ -1,9 +1,9 @@
-import styles from "../css/Resume.module.scss";
-import pdf from "../Media/Resumev3.pdf";
-import { FaFilePdf } from "react-icons/fa";
+import styles from '../css/Resume.module.scss'
+import pdf from '../Media/Resumev3.pdf'
+import { FaFilePdf } from 'react-icons/fa'
 const Resume = () => {
   return (
-    <div className={styles.resume} id="resume">
+    <section className={styles.resume} id="resume">
       <h1>Like what you see?</h1>
       <h2>Download my resume:</h2>
       <div className={styles.container}>
@@ -17,8 +17,8 @@ const Resume = () => {
           {/* <div className={styles.fancybox}></div> */}
         </div>
       </div>
-    </div>
-  );
-};
+    </section>
+  )
+}
 
-export default Resume;
+export default Resume
