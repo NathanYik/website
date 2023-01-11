@@ -1,9 +1,9 @@
-import React from "react";
-import styles from "../css/Home.module.scss";
-import "../css/transitions.scss";
-import pic from "../Media/circle-cropped.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import React from 'react'
+import styles from '../css/Home.module.scss'
+import '../css/transitions.scss'
+import pic from '../Media/circle-cropped.png'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 const Home = () => {
   return (
     <div className={styles.home} id="home">
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

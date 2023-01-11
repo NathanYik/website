@@ -1,15 +1,15 @@
-import Project from "./Project.js";
-import { useState } from "react";
-import styles from "../css/Projects.module.scss";
-import proj1img from "../Media/EmployeePortal.png";
-import proj2img from "../Media/port.png";
-import proj3img from "../Media/jobs.png";
-import proj4img from "../Media/taskathon.png";
+import Project from './Project'
+import { useState } from 'react'
+import styles from '../css/Projects.module.scss'
+import proj1img from '../Media/EmployeePortal.png'
+import proj2img from '../Media/port.png'
+import proj3img from '../Media/jobs.png'
+import proj4img from '../Media/taskathon.png'
 
 const Projects = ({}) => {
   const [projects, setProjects] = useState([
     {
-      title: "Royal Emerald Employee Portal",
+      title: 'Royal Emerald Employee Portal',
       img: proj1img,
       msg: (
         <ul>
@@ -27,10 +27,10 @@ const Projects = ({}) => {
           </li>
         </ul>
       ),
-      website: "https://employee.royalemeraldrx.com/",
+      website: 'https://employee.royalemeraldrx.com/',
     },
     {
-      title: "Taskathon Go!",
+      title: 'Taskathon Go!',
       img: proj4img,
       msg: (
         <ul>
@@ -48,10 +48,10 @@ const Projects = ({}) => {
           </li>
         </ul>
       ),
-      website: "https://taskathon.netlify.app/",
+      website: 'https://taskathon.netlify.app/',
     },
     {
-      title: "Personal Portfolio Website",
+      title: 'Personal Portfolio Website',
       img: proj2img,
       msg: (
         <ul>
@@ -63,11 +63,11 @@ const Projects = ({}) => {
           <li>Technologies Used: HTML, Sass, JavaScript, React.js</li>
         </ul>
       ),
-      website: "https://pawnnub.github.io/website/",
-      code: "https://github.com/Pawnnub/website.git",
+      website: 'https://pawnnub.github.io/website/',
+      code: 'https://github.com/Pawnnub/website.git',
     },
     {
-      title: "Job Application Tracker",
+      title: 'Job Application Tracker',
       img: proj3img,
       msg: (
         <ul>
@@ -85,10 +85,10 @@ const Projects = ({}) => {
           </li>
         </ul>
       ),
-      website: "https://job-application-hunting.herokuapp.com",
-      code: "https://github.com/Pawnnub/Applied-Companies-List",
+      website: 'https://job-application-hunting.herokuapp.com',
+      code: 'https://github.com/Pawnnub/Applied-Companies-List',
     },
-  ]);
+  ])
   return (
     <div className={styles.projects} id="projects">
       <h1>Projects</h1>
@@ -105,7 +105,7 @@ const Projects = ({}) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

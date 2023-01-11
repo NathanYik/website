@@ -1,11 +1,11 @@
-import styles from "./App.module.scss";
-import { useState } from "react";
-import Sidebar from "./components/Sidebar";
-import Content from "./components/Content";
-import { FaBars } from "react-icons/fa";
+import styles from './App.module.scss'
+import { useState } from 'react'
+import Sidebar from './components/Sidebar'
+import Content from './components/Content'
+import { FaBars } from 'react-icons/fa'
 
 function App() {
-  const [direction, setDirection] = useState("fade");
+  const [direction, setDirection] = useState('fade')
   const [page, setpage] = useState(
     window.innerWidth > 768
       ? {
@@ -20,12 +20,12 @@ function App() {
           about: true,
           resume: true,
         }
-  );
-  let selfclosing = window.innerWidth <= 768 ? true : false;
-  const [visible, setvisible] = useState(selfclosing);
-  let sidebarClassname = visible ? styles.sidebar : styles["sidebar-open"];
-  let contentClassname = visible ? styles.content : styles["content-open"];
-  let iconClassname = visible ? styles.icon : styles["icon-open"];
+  )
+  let selfclosing = window.innerWidth <= 768 ? true : false
+  const [visible, setvisible] = useState(selfclosing)
+  let sidebarClassname = visible ? styles.sidebar : styles['sidebar-open']
+  let contentClassname = visible ? styles.content : styles['content-open']
+  let iconClassname = visible ? styles.icon : styles['icon-open']
   return (
     <>
       <FaBars className={iconClassname} onClick={() => setvisible(!visible)} />
@@ -45,7 +45,7 @@ function App() {
         setDirection={setDirection}
       />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

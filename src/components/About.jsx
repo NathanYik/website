@@ -1,46 +1,46 @@
-import styles from "../css/About.module.scss";
-import { useState } from "react";
-import { FaEnvelope } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCode } from "react-icons/fa";
-import { FaToolbox } from "react-icons/fa";
-import { FaDatabase } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import styles from '../css/About.module.scss'
+import { useState } from 'react'
+import { FaEnvelope } from 'react-icons/fa'
+import { FaHtml5 } from 'react-icons/fa'
+import { FaCode } from 'react-icons/fa'
+import { FaToolbox } from 'react-icons/fa'
+import { FaDatabase } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 const About = () => {
-  const [languages, setLanguages] = useState(["Java", "C", "C++"]);
+  const [languages, setLanguages] = useState(['Java', 'C', 'C++'])
   const [FEskills, setFEskills] = useState([
-    "HTML",
-    "CSS",
-    "Sass",
-    "JavaScript",
-    "React.js",
-  ]);
+    'HTML',
+    'CSS',
+    'Sass',
+    'JavaScript',
+    'React.js',
+  ])
   const [BEskills, setBEskills] = useState([
-    "Node.js",
-    "MySQL",
-    "PostgreSQL",
-    "Express",
-  ]);
-  const [tools, setTools] = useState(["Git", "Unix"]);
+    'Node.js',
+    'MySQL',
+    'PostgreSQL',
+    'Express',
+  ])
+  const [tools, setTools] = useState(['Git', 'Unix'])
   const [skills, setSkills] = useState([
     {
       icon: <FaCode className={styles.img} />,
-      desc: "Languages",
+      desc: 'Languages',
       type: languages,
     },
     {
       icon: <FaHtml5 className={styles.img} />,
-      desc: "Front End",
+      desc: 'Front End',
       type: FEskills,
     },
     {
       icon: <FaDatabase className={styles.img} />,
-      desc: "Back End",
+      desc: 'Back End',
       type: BEskills,
     },
-    { icon: <FaToolbox className={styles.img} />, desc: "Tools", type: tools },
-  ]);
+    { icon: <FaToolbox className={styles.img} />, desc: 'Tools', type: tools },
+  ])
   return (
     <div className={styles.about} id="about">
       <h1>About Me</h1>
@@ -58,13 +58,13 @@ const About = () => {
           </p>
           <p>
             I am open to communicate! For professional inquiries, feel free to
-            contact me at{" "}
+            contact me at{' '}
             <a
               className={styles.desc}
               href="mailto:nathany094@gmail.com"
               target="_blank"
             >
-              {" "}
+              {' '}
               nathany094@gmail.com
             </a>
             . I am always looking for opportunities to improve my skillset in
@@ -125,7 +125,7 @@ const About = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

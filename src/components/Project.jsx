@@ -1,17 +1,17 @@
-import { useState } from "react";
-import styles from "../css/Project.module.scss";
-import Popup from "./Popup";
-import { CSSTransition } from "react-transition-group";
-import "../css/transitions.scss";
+import { useState } from 'react'
+import styles from '../css/Project.module.scss'
+import Popup from './Popup'
+import { CSSTransition } from 'react-transition-group'
+import '../css/transitions.scss'
 const Project = ({ title, website, code, img, msg }) => {
-  const [visible, setvisible] = useState(false);
+  const [visible, setvisible] = useState(false)
   const github = code ? (
     <a className={styles.link} href={code} target="_blank">
       Github
     </a>
   ) : (
     <p className={styles.unavailable}>Private source</p>
-  );
+  )
   return (
     <div className={styles.project}>
       <CSSTransition
@@ -34,13 +34,13 @@ const Project = ({ title, website, code, img, msg }) => {
           src={img}
           className={styles.img}
           onClick={() => {
-            setvisible(!visible);
+            setvisible(!visible)
           }}
         />
         <div className={styles.description}>{msg}</div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Project;
+export default Project
