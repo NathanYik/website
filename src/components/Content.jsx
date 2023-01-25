@@ -12,7 +12,7 @@ import Dots from './Dots'
 const Content = ({
   page,
   className,
-  setpage,
+  setPage,
   visible,
   direction,
   setDirection,
@@ -41,11 +41,11 @@ const Content = ({
   const [type, settype] = useState(window.innerWidth > 768 ? true : false)
   const handleWindowChange = () => {
     if (window.innerWidth <= 768 && type === true) {
-      setpage({ home: true, projects: true, about: true, resume: true })
+      setPage({ home: true, projects: true, about: true, resume: true })
       settype(false)
     } else if (window.innerWidth > 768 && type === false) {
       settype(true)
-      setpage({ home: true, projects: false, about: false, resume: false })
+      setPage({ home: true, projects: false, about: false, resume: false })
     }
   }
   useEffect(() => {
@@ -102,7 +102,7 @@ const Content = ({
         classNames="fade1"
         unmountOnExit
       >
-        <Arrows page={page} setpage={setpage} setDirection={setDirection} />
+        <Arrows page={page} setpage={setPage} setDirection={setDirection} />
       </CSSTransition>
     </div>
   )

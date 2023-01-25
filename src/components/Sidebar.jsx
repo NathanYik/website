@@ -3,10 +3,8 @@ import styles from '../css/Sidebar.module.scss'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa'
-import { FaBars } from 'react-icons/fa'
 
-const Sidebar = ({ setpage, className, setVisible, setDirection, visible }) => {
-  const menuButtonClassname = visible ? styles.icon : styles['icon-open']
+const Sidebar = ({ setPage, className, setVisible, setDirection }) => {
   const [type, setType] = useState(window.innerWidth > 768 ? true : false)
   const destinations = [
     {
@@ -50,7 +48,7 @@ const Sidebar = ({ setpage, className, setVisible, setDirection, visible }) => {
           href="#portfolio"
           className={styles.btn}
           onClick={() => {
-            setpage(button.destination)
+            setPage(button.destination)
             setDirection('fade')
           }}
           key={index}

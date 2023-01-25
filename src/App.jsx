@@ -6,7 +6,7 @@ import { FaBars } from 'react-icons/fa'
 
 function App() {
   const [direction, setDirection] = useState('fade')
-  const [page, setpage] = useState(
+  const [page, setPage] = useState(
     window.innerWidth > 768
       ? {
           home: true,
@@ -21,8 +21,8 @@ function App() {
           resume: true,
         }
   )
-  const selfclosing = window.innerWidth <= 768 ? true : false
-  const [visible, setVisible] = useState(selfclosing)
+  const selfClosing = window.innerWidth <= 768 ? true : false
+  const [visible, setVisible] = useState(selfClosing)
   const sidebarClassname = visible ? styles.sidebar : styles['sidebar-open']
   const contentClassname = visible ? styles.content : styles['content-open']
   let menuButtonClassname = visible ? styles.icon : styles['icon-open']
@@ -35,15 +35,14 @@ function App() {
       />
       <Sidebar
         className={sidebarClassname}
-        setpage={setpage}
-        selfclosing={selfclosing}
+        setPage={setPage}
         setVisible={setVisible}
         setDirection={setDirection}
       />
       <Content
         className={contentClassname}
         page={page}
-        setpage={setpage}
+        setPage={setPage}
         visible={visible}
         direction={direction}
         setDirection={setDirection}
