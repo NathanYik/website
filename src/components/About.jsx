@@ -1,11 +1,14 @@
+import {
+  FaCode,
+  FaDatabase,
+  FaEnvelope,
+  FaGithub,
+  FaHtml5,
+  FaLinkedin,
+  FaToolbox,
+} from 'react-icons/fa'
 import styles from '../css/About.module.scss'
-import { FaEnvelope } from 'react-icons/fa'
-import { FaHtml5 } from 'react-icons/fa'
-import { FaCode } from 'react-icons/fa'
-import { FaToolbox } from 'react-icons/fa'
-import { FaDatabase } from 'react-icons/fa'
-import { FaLinkedin } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
+
 const About = () => {
   const languages = [
     'JavaScript',

@@ -1,8 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 import styles from '../css/Sidebar.module.scss'
-import { FaLinkedin } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
-import { FaEnvelope } from 'react-icons/fa'
 
 const Sidebar = ({ setPage, className, setVisible, setDirection }) => {
   const [type, setType] = useState(window.innerWidth > 768 ? true : false)

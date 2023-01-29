@@ -1,9 +1,8 @@
 import React from 'react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import styles from '../css/Home.module.scss'
 import '../css/transitions.scss'
 import pic from '../Media/circle-cropped.png'
-import { FaLinkedin } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
 
 const Home = () => {
   return (
