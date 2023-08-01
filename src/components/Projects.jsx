@@ -66,7 +66,7 @@ const Projects = () => {
       code: 'https://github.com/nathanyik/website.git',
     },
     {
-      title: 'Guess The Height',
+      title: 'Job Application Tracker',
       img: proj3img,
       msg: (
         <ul>
