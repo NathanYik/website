@@ -1,3 +1,18 @@
+%icon-style {
+  position: fixed;
+  left: 23px;
+  top: 23px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+  z-index: 1000;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 .padding {
   height: 75px;
   // background-color: #454545;
@@ -6,6 +21,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
+
 .footer {
   // align-self: flex-end;
   // justify-self: flex-end;
@@ -57,4 +73,18 @@
     z-index: 1;
   }
   overflow-y: hidden;
+}
+
+.icon {
+  @extend %icon-style;
+}
+
+.icon-open {
+  @extend %icon-style;
+  color: goldenrod;
+  &:hover {
+    background-color: #7a7a7a;
+
+    box-shadow: 0px 0px 7px #9a9a9a;
+  }
 }

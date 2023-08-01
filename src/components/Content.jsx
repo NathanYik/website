@@ -1,23 +1,23 @@
-import { useState, useEffect } from "react";
-import Home from "./Home";
-import Projects from "./Projects";
-import About from "./About";
-import Resume from "./Resume";
-import styles from "../css/Content.module.scss";
-import "../css/transitions.scss";
-import { CSSTransition } from "react-transition-group";
-import Arrows from "./Arrows";
-import Dots from "./Dots";
+import { useState, useEffect } from 'react'
+import Home from './Home'
+import Projects from './Projects'
+import About from './About'
+import Resume from './Resume'
+import styles from '../css/Content.module.scss'
+import '../css/transitions.scss'
+import { CSSTransition } from 'react-transition-group'
+import Arrows from './Arrows'
+import Dots from './Dots'
 
 const Content = ({
   page,
   className,
-  setpage,
+  setPage,
   visible,
   direction,
   setDirection,
 }) => {
-  const [pageType, setPageType] = useState([]);
+  const [pageType, setPageType] = useState([])
   useEffect(() => {
     setPageType([
       {
@@ -36,25 +36,24 @@ const Content = ({
         content: <Resume />,
         dest: page.resume,
       },
-    ]);
-    return () => {};
-  }, [page]);
-  const [type, settype] = useState(window.innerWidth > 768 ? true : false);
+    ])
+  }, [page])
+  const [type, settype] = useState(window.innerWidth > 768 ? true : false)
   const handleWindowChange = () => {
     if (window.innerWidth <= 768 && type === true) {
-      setpage({ home: true, projects: true, about: true, resume: true });
-      settype(false);
+      setPage({ home: true, projects: true, about: true, resume: true })
+      settype(false)
     } else if (window.innerWidth > 768 && type === false) {
-      settype(true);
-      setpage({ home: true, projects: false, about: false, resume: false });
+      settype(true)
+      setPage({ home: true, projects: false, about: false, resume: false })
     }
-  };
+  }
   useEffect(() => {
-    window.addEventListener("resize", handleWindowChange);
+    window.addEventListener('resize', handleWindowChange)
     return () => {
-      window.removeEventListener("resize", handleWindowChange);
-    };
-  }, [type]);
+      window.removeEventListener('resize', handleWindowChange)
+    }
+  }, [type])
   return (
     <div className={className}>
       <div id="portfolio"></div>
@@ -103,10 +102,10 @@ const Content = ({
         classNames="fade1"
         unmountOnExit
       >
-        <Arrows page={page} setpage={setpage} setDirection={setDirection} />
+        <Arrows page={page} setpage={setPage} setDirection={setDirection} />
       </CSSTransition>
     </div>
-  );
-};
+  )
+}
 
-export default Content;
+export default Content
